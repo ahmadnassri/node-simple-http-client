@@ -1,0 +1,43 @@
+{
+  "version": "0.0.0-development",
+  "name": "@ahmadnassri/simple-http-client",
+  "description": "a purpose-built http api client in universal javascript (isomorphic)",
+  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://ahmadnassri.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadnassri/node-simple-http-client.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "http",
+    "client"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmadnassri/node-simple-http-client/issues"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  },
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "esmodule": "dist/index.modern.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "microbundle --external http,zlib",
+    "test": "npm run test:node && npm run test:cypress",
+    "test:node": "mocha cypress/integration",
+    "test:cypress": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^4.8.0",
+    "microbundle": "^0.12.0",
+    "mocha": "^8.0.1"
+  }
+}
