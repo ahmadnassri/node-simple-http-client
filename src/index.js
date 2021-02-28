@@ -8,5 +8,3 @@ export default function http (options = {}) {
   // determine which function to run
   return isNode ? node(options) : browser(options)
 }
-
-export { browser, node }

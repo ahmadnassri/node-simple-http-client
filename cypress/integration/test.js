@@ -1,4 +1,4 @@
-const http = require('../../dist/index')
+const http = require('../../dist/index.js')
 const assert = require('assert')
 
 const host = 'httpbin.org'

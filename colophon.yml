@@ -1,0 +1,8 @@
+version: 2.0
+
+id: node-plain-http
+
+about:
+  title: Plain HTTP JSON Client
+  description: a purpose-built http api client in universal javascript (isomorphic)
+  repository: ahmadnassri/node-plain-http
