@@ -42,7 +42,7 @@
     "test:ci": "npm run test"
   },
   "devDependencies": {
-    "cypress": "^6.5.0",
+    "cypress": "^6.7.1",
     "microbundle": "^0.13.0",
     "mocha": "^8.3.0"
   }
